@@ -2833,7 +2833,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #0f6edb;
+  background: #2eff3d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2868,7 +2868,7 @@ hr {
 }
 .sidebar a {
   border-bottom-color: #fff;
-  color: #fff;
+  color: #001217;
 }
 .sidebar a:hover {
   border-bottom-color: $FFFFFF;
