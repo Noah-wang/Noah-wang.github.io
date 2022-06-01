@@ -23,28 +23,41 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"noah-wang.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="我的网站计划">
-<meta property="og:type" content="website">
-<meta property="og:title" content="plan">
-<meta property="og:url" content="https://noah-wang.github.io/plan/index.html">
+    <meta name="description" content="PicGo图床今天我们要利用PicGo和阿里云的OSS服务来搭建一个图床，我们可以把我们本地需要的图片上传到图床上，在以后的博客中我们就可以随意的利用图片的URL来上传图片，即省了本地电脑的空间，又可以很简单的上传图片。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PicGo图床">
+<meta property="og:url" content="https://noah-wang.github.io/2022/06/01/PicGo%E5%9B%BE%E5%BA%8A/index.html">
 <meta property="og:site_name" content="有什么好名字">
-<meta property="og:description" content="我的网站计划">
+<meta property="og:description" content="PicGo图床今天我们要利用PicGo和阿里云的OSS服务来搭建一个图床，我们可以把我们本地需要的图片上传到图床上，在以后的博客中我们就可以随意的利用图片的URL来上传图片，即省了本地电脑的空间，又可以很简单的上传图片。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-05-25T21:25:24.000Z">
-<meta property="article:modified_time" content="2022-05-25T21:46:58.746Z">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91OSS.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%A7%E5%93%81.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BB%93%E7%AE%97.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%88%9B%E5%BB%BAbucket.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%AF%86%E9%92%A5.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%AD%98%E5%82%A8%E5%8C%BA%E5%9F%9F.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%B0%9D%E8%AF%95.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%8A%E4%BC%A0%E6%BC%94%E7%A4%BA.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%8A%E4%BC%A0%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%9B%B8%E5%86%8C.png">
+<meta property="article:published_time" content="2022-06-01T16:49:03.000Z">
+<meta property="article:modified_time" content="2022-06-01T18:45:38.134Z">
 <meta property="article:author" content="Noah Wang">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo.png">
 
 
-<link rel="canonical" href="https://noah-wang.github.io/plan/">
+<link rel="canonical" href="https://noah-wang.github.io/2022/06/01/PicGo%E5%9B%BE%E5%BA%8A/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://noah-wang.github.io/plan/index.html","path":"plan/index.html","title":"plan"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://noah-wang.github.io/2022/06/01/PicGo%E5%9B%BE%E5%BA%8A/","path":"2022/06/01/PicGo图床/","title":"PicGo图床"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>plan | 有什么好名字
-</title>
+<title>PicGo图床 | 有什么好名字</title>
   
 
 
@@ -122,7 +135,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E7%BD%91%E7%AB%99%E8%AE%A1%E5%88%92"><span class="nav-number">1.</span> <span class="nav-text">我的网站计划</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%B2%E5%AE%8C%E6%88%90"><span class="nav-number">1.1.</span> <span class="nav-text">已完成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AA%E5%AE%8C%E6%88%90"><span class="nav-number">1.2.</span> <span class="nav-text">未完成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90"><span class="nav-number">1.2.1.</span> <span class="nav-text">背景音乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E5%86%8C"><span class="nav-number">1.2.2.</span> <span class="nav-text">相册</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A1%B5%E8%BE%B9%E8%B7%9D"><span class="nav-number">1.2.3.</span> <span class="nav-text">页边距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%AB%99%E9%85%8D%E8%89%B2"><span class="nav-number">1.2.4.</span> <span class="nav-text">网站配色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E8%AE%A1%E5%88%92"><span class="nav-number">1.2.5.</span> <span class="nav-text">文章计划</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#PicGo%E5%9B%BE%E5%BA%8A"><span class="nav-number">1.</span> <span class="nav-text">PicGo图床</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%85%8D%E7%BD%AEPicGo"><span class="nav-number">1.1.</span> <span class="nav-text">1. 配置PicGo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91OSS"><span class="nav-number">1.2.</span> <span class="nav-text">2. 配置阿里云OSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E8%BF%9E%E6%8E%A5PicGo"><span class="nav-number">1.3.</span> <span class="nav-text">3. 连接PicGo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E4%BD%BF%E7%94%A8"><span class="nav-number">1.4.</span> <span class="nav-text">4. 使用</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -200,45 +213,149 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
+  
 
-<h1 class="post-title" itemprop="name headline">plan
-</h1>
 
-<div class="post-meta-container">
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://noah-wang.github.io/2022/06/01/PicGo%E5%9B%BE%E5%BA%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://noahwang.oss-us-west-1.aliyuncs.com/avatar.gif">
+      <meta itemprop="name" content="Noah Wang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="有什么好名字">
+      <meta itemprop="description" content="这是我的博客，我会上面发表一些有意思的东西">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="PicGo图床 | 有什么好名字">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PicGo图床
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-06-01 11:49:03 / 修改时间：13:45:38" itemprop="dateCreated datePublished" datetime="2022-06-01T11:49:03-05:00">2022-06-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">网站搭建</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      <div class="post-body">
-          <h1 id="我的网站计划"><a href="#我的网站计划" class="headerlink" title="我的网站计划"></a>我的网站计划</h1><span id="more"></span>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="PicGo图床"><a href="#PicGo图床" class="headerlink" title="PicGo图床"></a>PicGo图床</h1><p>今天我们要利用<strong>PicGo</strong>和<strong>阿里云</strong>的<strong>OSS</strong>服务来搭建一个图床，我们可以把我们本地需要的图片上传到图床上，在以后的博客中我们就可以随意的利用图片的URL来上传图片，即省了本地电脑的空间，又可以很简单的上传图片。<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo.png" alt="PicGologo"></p>
+<span id="more"></span>
 
-<h2 id="已完成"><a href="#已完成" class="headerlink" title="已完成"></a>已完成</h2><p><strong><del>设置头像</del></strong></p>
-<p><strong><del>设置背景</del></strong></p>
-<p><strong><del>第一篇教程</del></strong></p>
-<p><strong><del>自我介绍</del></strong></p>
-<h2 id="未完成"><a href="#未完成" class="headerlink" title="未完成"></a>未完成</h2><h3 id="背景音乐"><a href="#背景音乐" class="headerlink" title="背景音乐"></a>背景音乐</h3><h3 id="相册"><a href="#相册" class="headerlink" title="相册"></a>相册</h3><h3 id="页边距"><a href="#页边距" class="headerlink" title="页边距"></a>页边距</h3><h3 id="网站配色"><a href="#网站配色" class="headerlink" title="网站配色"></a>网站配色</h3><h3 id="文章计划"><a href="#文章计划" class="headerlink" title="文章计划"></a>文章计划</h3><p>hexo搭建</p>
-<p>issue整理</p>
-<p>unity分享</p>
-<p>随笔</p>
-<p>吉他曲谱分享</p>
+<h2 id="1-配置PicGo"><a href="#1-配置PicGo" class="headerlink" title="1. 配置PicGo"></a>1. 配置PicGo</h2><p>首先我们需要安装<strong>PicGo</strong>，可以在下面的地址安装</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
+<p>安装完以后我们进到设置里，因为我们只使用<strong>阿里云OSS</strong>，所以可以只勾选<strong>阿里云OSS</strong>，其他的可以关掉<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo%E8%AE%BE%E7%BD%AE.png" alt="PicGo设置"></p>
+<h2 id="2-配置阿里云OSS"><a href="#2-配置阿里云OSS" class="headerlink" title="2. 配置阿里云OSS"></a>2. 配置阿里云OSS</h2><p>我们可以在这个网址打开阿里云的官网进行账号注册：<br><a target="_blank" rel="noopener" href="https://cn.aliyun.com/">https://cn.aliyun.com/</a></p>
+<p>然后在最上面找到<strong>对象</strong>-&gt;<strong>存储</strong>-&gt;<strong>对象存储OSS</strong><br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91OSS.png" alt="阿里云"></p>
+<p>点进去，因为只是自己的图床，我们选择本地冗余LRS就可以<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%A7%E5%93%81.png" alt="阿里云产品"></p>
+<p>然后，到了结算界面，时长根据你的需要进行挑选，唯一需要更改的就是你的地域，选一个离你地区进的服务器，这样上传更快一些。这个价格也是十分的便宜，四五年也就几十块钱，所以非常推荐阿里云的策略，然不是使用<strong>Gitee</strong>搭建，我在使用<strong>Gitee</strong>搭建的时候遇到了很多的麻烦，转用阿里云之后一路畅通，用的很轻松。<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BB%93%E7%AE%97.png" alt="阿里云产品"></p>
+<p>进到我们的主页，在左侧找到<strong>Bucket</strong>，进到<strong>Bucket</strong>页，我们选择创建<strong>Bucket</strong><br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%88%9B%E5%BB%BAbucket.png" alt="创建Bucket"></p>
+<p>创建好Bucket就可以生成密钥了，此处的密钥需要妥善保管<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%AF%86%E9%92%A5.png" alt="访问设置"></p>
+<p>目前我们的<strong>阿里云OSS</strong>就配置好了</p>
+<h2 id="3-连接PicGo"><a href="#3-连接PicGo" class="headerlink" title="3. 连接PicGo"></a>3. 连接PicGo</h2><p>接下来我们需要将<strong>PicGo</strong>和<strong>阿里云OSS</strong>连接起来<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo%E9%85%8D%E7%BD%AE.png" alt="Picgo配置"></p>
+<ul>
+<li><strong>KeyId</strong>为<strong>AccessKey ID</strong></li>
+<li><strong>KeySecret</strong>为**AccessKey **<strong>Secret</strong></li>
+<li><strong>存储空间名</strong>为设置的<strong>Bucket</strong>名字</li>
+<li><strong>存储区域</strong>为服务器地区</li>
+</ul>
+<p><strong>存储区域</strong>可以在这里找到<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%AD%98%E5%82%A8%E5%8C%BA%E5%9F%9F.png" alt="存储区域"></p>
+<p>在<strong>Endpoint</strong>的点前为<strong>存储区域</strong></p>
+<p>我们点击确定进行保存</p>
+<h2 id="4-使用"><a href="#4-使用" class="headerlink" title="4. 使用"></a>4. 使用</h2><p>目前我们的所有工作就都做完了，我们可以使用一张图片尝试</p>
+<p>我们选到<strong>上传区</strong><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%B0%9D%E8%AF%95.png" alt="尝试"></p>
+<p>把一张本地的图片拖到这里，我们可以给图片重新起个名字，保持好的整理习惯<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%8A%E4%BC%A0%E6%BC%94%E7%A4%BA.png" alt="上传演示"></p>
+<p>当右下角出现上传成功的提醒，证明我们的图片就上传成功了<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%8A%E4%BC%A0%E6%88%90%E5%8A%9F.png" alt="上传成功"></p>
+<p>点击相册，我们就可以看到我们上传成功的图片了，点击下面的按钮就可以复制文件的地址了<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%9B%B8%E5%86%8C.png" alt="相册"></p>
+<p>到此我们图片上传的工作就全部结束了，我们可以用图床在<strong>Markdown</strong>文档进行上传图片了，不仅仅在可以在文档插入，在其他方面图床也是有非常多的用武之地的，希望以后你可以利用<strong>PicGo</strong>来进行更具有生产力的创作！</p>
 
-      </div>
-      
-      
-      
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://noahwang.oss-us-west-1.aliyuncs.com/wechat.jpg">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/05/30/Next%E4%B8%BB%E9%A2%98/" rel="prev" title="Next主题安装">
+                  <i class="fa fa-chevron-left"></i> Next主题安装
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 </div>
