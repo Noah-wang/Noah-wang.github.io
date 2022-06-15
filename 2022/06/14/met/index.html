@@ -23,41 +23,39 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"noah-wang.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","width":360,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="PicGo图床今天我们要利用PicGo和阿里云的OSS服务来搭建一个图床，我们可以把我们本地需要的图片上传到图床上，在以后的博客中我们就可以随意的利用图片的URL来上传图片，即省了本地电脑的空间，又可以很简单的上传图片。">
+    <meta name="description" content="博物馆这次去纽约来到了大都会博物馆，也是期待了很久，凑着这次机会来了解一下全世界的四大博物馆">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PicGo图床">
-<meta property="og:url" content="https://noah-wang.github.io/2022/06/01/PicGo%E5%9B%BE%E5%BA%8A/index.html">
+<meta property="og:title" content="游大都会博物馆">
+<meta property="og:url" content="https://noah-wang.github.io/2022/06/14/met/index.html">
 <meta property="og:site_name" content="有什么好名字">
-<meta property="og:description" content="PicGo图床今天我们要利用PicGo和阿里云的OSS服务来搭建一个图床，我们可以把我们本地需要的图片上传到图床上，在以后的博客中我们就可以随意的利用图片的URL来上传图片，即省了本地电脑的空间，又可以很简单的上传图片。">
+<meta property="og:description" content="博物馆这次去纽约来到了大都会博物馆，也是期待了很久，凑着这次机会来了解一下全世界的四大博物馆">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo%E8%AE%BE%E7%BD%AE.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91OSS.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%A7%E5%93%81.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BB%93%E7%AE%97.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%88%9B%E5%BB%BAbucket.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%AF%86%E9%92%A5.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo%E9%85%8D%E7%BD%AE.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%AD%98%E5%82%A8%E5%8C%BA%E5%9F%9F.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%B0%9D%E8%AF%95.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%8A%E4%BC%A0%E6%BC%94%E7%A4%BA.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%8A%E4%BC%A0%E6%88%90%E5%8A%9F.png">
-<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%9B%B8%E5%86%8C.png">
-<meta property="article:published_time" content="2022-06-01T16:49:03.000Z">
-<meta property="article:modified_time" content="2022-06-01T18:45:38.134Z">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%BA%BD%E7%BA%A6.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%8D%A2%E6%B5%AE%E5%AE%AB.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E8%92%99%E5%A8%9C%E4%B8%BD%E8%8E%8E.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%8D%9A%E7%89%A9%E9%A6%86.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%A5%9E%E5%A5%88%E5%B7%9D%E5%86%B2%E6%B5%AA%E9%87%8C.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%86%AC%E5%AE%AB.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E8%8E%AB%E5%A5%88.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%A4%A7%E8%8B%B1%E5%8D%9A%E7%89%A9%E9%A6%86.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%B8%95%E7%89%B9%E5%86%9C%E7%A5%9E%E5%BA%99%E9%9B%95%E5%A1%91.jpg">
+<meta property="og:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%B9%E9%93%8E%E7%A5%9E%E5%BA%99.jpg">
+<meta property="article:published_time" content="2022-06-15T01:08:52.000Z">
+<meta property="article:modified_time" content="2022-06-15T01:48:21.872Z">
 <meta property="article:author" content="Noah Wang">
+<meta property="article:tag" content="听我说">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo.png">
+<meta name="twitter:image" content="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%BA%BD%E7%BA%A6.jpg">
 
 
-<link rel="canonical" href="https://noah-wang.github.io/2022/06/01/PicGo%E5%9B%BE%E5%BA%8A/">
+<link rel="canonical" href="https://noah-wang.github.io/2022/06/14/met/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://noah-wang.github.io/2022/06/01/PicGo%E5%9B%BE%E5%BA%8A/","path":"2022/06/01/PicGo图床/","title":"PicGo图床"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://noah-wang.github.io/2022/06/14/met/","path":"2022/06/14/met/","title":"游大都会博物馆"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>PicGo图床 | 有什么好名字</title>
+<title>游大都会博物馆 | 有什么好名字</title>
   
 
 
@@ -135,7 +133,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#PicGo%E5%9B%BE%E5%BA%8A"><span class="nav-number">1.</span> <span class="nav-text">PicGo图床</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%85%8D%E7%BD%AEPicGo"><span class="nav-number">1.1.</span> <span class="nav-text">1. 配置PicGo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91OSS"><span class="nav-number">1.2.</span> <span class="nav-text">2. 配置阿里云OSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E8%BF%9E%E6%8E%A5PicGo"><span class="nav-number">1.3.</span> <span class="nav-text">3. 连接PicGo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E4%BD%BF%E7%94%A8"><span class="nav-number">1.4.</span> <span class="nav-text">4. 使用</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%9A%E7%89%A9%E9%A6%86"><span class="nav-number">1.</span> <span class="nav-text">博物馆</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E5%A4%A7%E5%8D%9A%E7%89%A9%E9%A6%86"><span class="nav-number">1.1.</span> <span class="nav-text">四大博物馆</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%95%E5%9B%BD%EF%BC%8D%E5%8D%A2%E6%B5%AE%E5%AE%AB"><span class="nav-number">1.1.1.</span> <span class="nav-text">法国－卢浮宫</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BE%8E%E5%9B%BD%EF%BC%8D%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%8D%9A%E7%89%A9%E9%A6%86"><span class="nav-number">1.1.2.</span> <span class="nav-text">美国－大都会博物馆</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%84%E7%BD%97%E6%96%AF%EF%BC%8D%E5%86%AC%E5%AE%AB"><span class="nav-number">1.1.3.</span> <span class="nav-text">俄罗斯－冬宫</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8B%B1%E5%9B%BD%EF%BC%8D%E5%A4%A7%E8%8B%B1%E5%8D%9A%E7%89%A9%E9%A6%86"><span class="nav-number">1.1.4.</span> <span class="nav-text">英国－大英博物馆</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%B9%E9%93%8E%E7%A5%9E%E5%BA%99"><span class="nav-number">1.2.</span> <span class="nav-text">丹铎神庙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E6%96%87%E7%89%A9%E5%BD%92%E5%B1%9E%E5%9C%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.3.</span> <span class="nav-text">关于文物归属地的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%85%E5%AE%AB%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%9C%A8%E5%85%A8%E7%90%83%E5%9B%9B%E5%A4%A7%E5%8D%9A%E7%89%A9%E9%A6%86%E4%B8%AD"><span class="nav-number">1.4.</span> <span class="nav-text">故宫为什么不在全球四大博物馆中</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -231,7 +229,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://noah-wang.github.io/2022/06/01/PicGo%E5%9B%BE%E5%BA%8A/">
+    <link itemprop="mainEntityOfPage" href="https://noah-wang.github.io/2022/06/14/met/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://noahwang.oss-us-west-1.aliyuncs.com/avatar.gif">
@@ -244,12 +242,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="PicGo图床 | 有什么好名字">
+      <meta itemprop="name" content="游大都会博物馆 | 有什么好名字">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          PicGo图床
+          游大都会博物馆
         </h1>
 
         <div class="post-meta-container">
@@ -261,16 +259,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-06-01 11:49:03 / 修改时间：13:45:38" itemprop="dateCreated datePublished" datetime="2022-06-01T11:49:03-05:00">2022-06-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">网站搭建</span></a>
-        </span>
+      <time title="创建时间：2022-06-14 20:08:52 / 修改时间：20:48:21" itemprop="dateCreated datePublished" datetime="2022-06-14T20:08:52-05:00">2022-06-14</time>
     </span>
 
   
@@ -290,35 +279,36 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="PicGo图床"><a href="#PicGo图床" class="headerlink" title="PicGo图床"></a>PicGo图床</h1><p>今天我们要利用<strong>PicGo</strong>和<strong>阿里云</strong>的<strong>OSS</strong>服务来搭建一个图床，我们可以把我们本地需要的图片上传到图床上，在以后的博客中我们就可以随意的利用图片的URL来上传图片，即省了本地电脑的空间，又可以很简单的上传图片。<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo.png" alt="PicGologo"></p>
+        <h1 id="博物馆"><a href="#博物馆" class="headerlink" title="博物馆"></a>博物馆</h1><p>这次去纽约来到了大都会博物馆，也是期待了很久，凑着这次机会来了解一下全世界的四大博物馆</p>
+<p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%BA%BD%E7%BA%A6.jpg" alt="纽约"></p>
 <span id="more"></span>
 
-<h2 id="1-配置PicGo"><a href="#1-配置PicGo" class="headerlink" title="1. 配置PicGo"></a>1. 配置PicGo</h2><p>首先我们需要安装<strong>PicGo</strong>，可以在下面的地址安装</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
-<p>安装完以后我们进到设置里，因为我们只使用<strong>阿里云OSS</strong>，所以可以只勾选<strong>阿里云OSS</strong>，其他的可以关掉<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo%E8%AE%BE%E7%BD%AE.png" alt="PicGo设置"></p>
-<h2 id="2-配置阿里云OSS"><a href="#2-配置阿里云OSS" class="headerlink" title="2. 配置阿里云OSS"></a>2. 配置阿里云OSS</h2><p>我们可以在这个网址打开阿里云的官网进行账号注册：<br><a target="_blank" rel="noopener" href="https://cn.aliyun.com/">https://cn.aliyun.com/</a></p>
-<p>然后在最上面找到<strong>对象</strong>-&gt;<strong>存储</strong>-&gt;<strong>对象存储OSS</strong><br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91OSS.png" alt="阿里云"></p>
-<p>点进去，因为只是自己的图床，我们选择本地冗余LRS就可以<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91%E4%BA%A7%E5%93%81.png" alt="阿里云产品"></p>
-<p>然后，到了结算界面，时长根据你的需要进行挑选，唯一需要更改的就是你的地域，选一个离你地区进的服务器，这样上传更快一些。这个价格也是十分的便宜，四五年也就几十块钱，所以非常推荐阿里云的策略，然不是使用<strong>Gitee</strong>搭建，我在使用<strong>Gitee</strong>搭建的时候遇到了很多的麻烦，转用阿里云之后一路畅通，用的很轻松。<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E9%98%BF%E9%87%8C%E4%BA%91%E7%BB%93%E7%AE%97.png" alt="阿里云产品"></p>
-<p>进到我们的主页，在左侧找到<strong>Bucket</strong>，进到<strong>Bucket</strong>页，我们选择创建<strong>Bucket</strong><br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%88%9B%E5%BB%BAbucket.png" alt="创建Bucket"></p>
-<p>创建好Bucket就可以生成密钥了，此处的密钥需要妥善保管<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%AF%86%E9%92%A5.png" alt="访问设置"></p>
-<p>目前我们的<strong>阿里云OSS</strong>就配置好了</p>
-<h2 id="3-连接PicGo"><a href="#3-连接PicGo" class="headerlink" title="3. 连接PicGo"></a>3. 连接PicGo</h2><p>接下来我们需要将<strong>PicGo</strong>和<strong>阿里云OSS</strong>连接起来<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/PicGo%E9%85%8D%E7%BD%AE.png" alt="Picgo配置"></p>
-<ul>
-<li><strong>KeyId</strong>为<strong>AccessKey ID</strong></li>
-<li><strong>KeySecret</strong>为**AccessKey **<strong>Secret</strong></li>
-<li><strong>存储空间名</strong>为设置的<strong>Bucket</strong>名字</li>
-<li><strong>存储区域</strong>为服务器地区</li>
-</ul>
-<p><strong>存储区域</strong>可以在这里找到<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%AD%98%E5%82%A8%E5%8C%BA%E5%9F%9F.png" alt="存储区域"></p>
-<p>在<strong>Endpoint</strong>的点前为<strong>存储区域</strong></p>
-<p>我们点击确定进行保存</p>
-<h2 id="4-使用"><a href="#4-使用" class="headerlink" title="4. 使用"></a>4. 使用</h2><p>目前我们的所有工作就都做完了，我们可以使用一张图片尝试</p>
-<p>我们选到<strong>上传区</strong><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%B0%9D%E8%AF%95.png" alt="尝试"></p>
-<p>把一张本地的图片拖到这里，我们可以给图片重新起个名字，保持好的整理习惯<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%8A%E4%BC%A0%E6%BC%94%E7%A4%BA.png" alt="上传演示"></p>
-<p>当右下角出现上传成功的提醒，证明我们的图片就上传成功了<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%8A%E4%BC%A0%E6%88%90%E5%8A%9F.png" alt="上传成功"></p>
-<p>点击相册，我们就可以看到我们上传成功的图片了，点击下面的按钮就可以复制文件的地址了<br><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%9B%B8%E5%86%8C.png" alt="相册"></p>
-<p>到此我们图片上传的工作就全部结束了，我们可以用图床在<strong>Markdown</strong>文档进行上传图片了，不仅仅在可以在文档插入，在其他方面图床也是有非常多的用武之地的，希望以后你可以利用<strong>PicGo</strong>来进行更具有生产力的创作！</p>
+<h2 id="四大博物馆"><a href="#四大博物馆" class="headerlink" title="四大博物馆"></a>四大博物馆</h2><h3 id="法国－卢浮宫"><a href="#法国－卢浮宫" class="headerlink" title="法国－卢浮宫"></a>法国－卢浮宫</h3><p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%8D%A2%E6%B5%AE%E5%AE%AB.jpg" alt="卢浮宫"></p>
+<p>卢浮宫始建于<strong>1190年</strong>，总面积超过<strong>60, 600平方米</strong>，馆内包括雕塑、绘画、美术工艺、古代东方、古代埃及和古希腊罗马等7个分类，平均每天有<strong>15,000名</strong>游客到此参观。</p>
+<p>著名藏品：蒙娜丽莎</p>
+<p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E8%92%99%E5%A8%9C%E4%B8%BD%E8%8E%8E.jpg" alt="蒙娜丽莎"></p>
+<hr>
+<h3 id="美国－大都会博物馆"><a href="#美国－大都会博物馆" class="headerlink" title="美国－大都会博物馆"></a>美国－大都会博物馆</h3><p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%A4%A7%E9%83%BD%E4%BC%9A%E5%8D%9A%E7%89%A9%E9%A6%86.jpg" alt="大都会博物馆"></p>
+<p>大都会艺术博物馆位于美国纽约市曼哈顿中央公园旁，是世界上最大，参过人数最多的博物馆之一。主建筑面积约<strong>80,000平方米</strong>，展出面积有<strong>200,000多平方米</strong>，馆藏超过两百万件艺术品，整个博物馆被划分为十七个馆部。</p>
+<p>著名藏品：神奈川冲浪里（葛饰北斋）</p>
+<p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E7%A5%9E%E5%A5%88%E5%B7%9D%E5%86%B2%E6%B5%AA%E9%87%8C.jpg" alt="神奈川冲浪里"></p>
+<hr>
+<h3 id="俄罗斯－冬宫"><a href="#俄罗斯－冬宫" class="headerlink" title="俄罗斯－冬宫"></a>俄罗斯－冬宫</h3><p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%86%AC%E5%AE%AB.jpg" alt="冬宫"></p>
+<p>冬宫的正式名字为埃尔米塔日博物馆，位于圣彼得堡的涅瓦河边，共有6座主要建筑。在大约250年的时间里，埃尔米塔日博物馆收集了近三百万件从石器时代至当代的世界文化艺术真品。</p>
+<p>著名藏品：莫奈真迹</p>
+<p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E8%8E%AB%E5%A5%88.jpg" alt="莫奈"></p>
+<hr>
+<h3 id="英国－大英博物馆"><a href="#英国－大英博物馆" class="headerlink" title="英国－大英博物馆"></a>英国－大英博物馆</h3><p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%A4%A7%E8%8B%B1%E5%8D%9A%E7%89%A9%E9%A6%86.jpg" alt="大英博物馆"></p>
+<p>大英博物馆位于英国伦敦，是世界首个国家博物馆，馆内现有800多万件藏品，大量藏品因空间限制未能公开展出。大英博物馆游览面积为<strong>92,000平方米</strong>，博物馆展出的5万件藏品连全部藏品的1％都不到。</p>
+<p>著名藏品：帕特农神庙大理石</p>
+<p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E5%B8%95%E7%89%B9%E5%86%9C%E7%A5%9E%E5%BA%99%E9%9B%95%E5%A1%91.jpg" alt="帕特农神庙大理石"></p>
+<hr>
+<h2 id="丹铎神庙"><a href="#丹铎神庙" class="headerlink" title="丹铎神庙"></a>丹铎神庙</h2><p><img src="https://noahwang.oss-us-west-1.aliyuncs.com/%E4%B8%B9%E9%93%8E%E7%A5%9E%E5%BA%99.jpg" alt="丹铎神庙"></p>
+<p>丹铎神庙可以说是大都会博物馆的其中一个镇馆之宝了，能在室内的博物馆见到如此完整的建筑也是十分的稀有。其实在很久以前就听说过这个标志性的建筑，主要还是因为这个建筑的能出现在大都会博物馆的原因而知道的。丹铎神庙是一座在公园前15年左右在埃及兴建的一座神庙。因为水坝的修建导致纳赛尔湖即将淹没很多的重要遗迹，联合国教科文组织发起了迁址工作，为了感谢美国对迁址工作的贡献，埃及政府在1965年把丹铎神庙赠与给美国。整个神庙被分成了石块，共661个集装箱运至美国，在1978年正式向公众开放。整个过程可以说是十分逆天了。</p>
+<h2 id="关于文物归属地的问题"><a href="#关于文物归属地的问题" class="headerlink" title="关于文物归属地的问题"></a>关于文物归属地的问题</h2><p>有很多人说“这不就是美国把埃及的文物抢走了吗”。文物归属地的问题一直争议比较大，包括我们都知道的，因为八国联军入侵而缺失的十二铜首的一部分也只能通过拍卖的方式来收回。</p>
+<p>大英博物馆，卢浮宫，大都会博物馆等18家博物馆联合发表《关于环球博物馆的重要性和价值的声明》，反对将艺术品特别是古代文物归还原属国。声称：“长期以来，这些获得的物品——不管是通过购买还是礼品交换等方式，已经成为保管这些物品的博物馆的一部分，并且延伸为收藏这些物品的国家的一部分。” 美国大都会还称，很多博物馆超过90%的馆藏都是国外的文物，如果真的全部归还，这些博物馆就几乎被掏空了。</p>
+<p>此外，像大英博物馆的文物如果真的归还，甚至还要涉及英国的现行法律。但丹铎神庙的情况不太一样，埃及作为文物的拥有国已经不能很好地保护好自己国家的文物了，当自然灾难来临时，埃及选择了把自己的文物捐赠出去，让有能力的国家更好的保护文物，这时的丹铎神庙不仅仅是只是埃及的财产，更是全人类的财产，无论文物在哪里，让他们被很好地保存下来才是各国应该努力的方向。</p>
+<h2 id="故宫为什么不在全球四大博物馆中"><a href="#故宫为什么不在全球四大博物馆中" class="headerlink" title="故宫为什么不在全球四大博物馆中"></a>故宫为什么不在全球四大博物馆中</h2><p>虽然故宫的面积很大，但是展览面积很小，大都会博物馆的面积为故宫的1/9，但是展览面积是故宫的两倍，也有人提到了故宫展出的展品过于窄了，不如其他的世界级博物馆的展品广。也有人说是因为西方的评定。由于种种原因，故宫博物院没有进入全球四大博物馆中。</p>
 
     </div>
 
@@ -344,19 +334,19 @@
   </div>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/%E5%90%AC%E6%88%91%E8%AF%B4/" rel="tag"># 听我说</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/05/30/Next%E4%B8%BB%E9%A2%98/" rel="prev" title="Next主题安装">
-                  <i class="fa fa-chevron-left"></i> Next主题安装
+                <a href="/2022/06/02/%E6%A1%8C%E9%9D%A2%E5%AE%A0%E7%89%A9/" rel="prev" title="桌面宠物">
+                  <i class="fa fa-chevron-left"></i> 桌面宠物
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/06/02/%E6%A1%8C%E9%9D%A2%E5%AE%A0%E7%89%A9/" rel="next" title="桌面宠物">
-                  桌面宠物 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
